@@ -29,8 +29,8 @@ const AuthLayout: React.FC<AuthLayoutProps> = ({ children }) => {
           alt="Dashboard"
           className="max-w-full rounded-lg shadow-xl"
         />
-        <h2 className="text-xl font-bold mt-6 text-center">Easy-to-Use Dashboard for Managing Your Business.</h2>
-        <p className="text-sm text-center mt-2 text-blue-100">
+        <h2 className="text-xl font-bold mt-6 text-center text-gray-800">Easy-to-Use Dashboard for Managing Your Business.</h2>
+        <p className="text-sm text-center mt-2  text-gray-600">
           Streamline your business management with our user-friendly dashboard. Simplify complex tasks,
           track key metrics, and make informed decisions effortlessly.
         </p>
