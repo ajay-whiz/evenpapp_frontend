@@ -172,7 +172,6 @@ export const generateAllMenuItems = (): MenuItemFromFeature[] => {
     'form_builder',
     'venue_management',
     'service_category',
-    'vendor_category',
     'vendor_management',
     'booking_management',
     'quotation_management',

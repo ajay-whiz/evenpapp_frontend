@@ -184,7 +184,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isExpanded, toggleSidebar }) => {
       )}
     >
       {/* Fixed Header - Logo Section */}
-      <div className="flex-shrink-0">
+      <div className="shrink-0">
         <div className="flex items-center justify-between px-4 py-3 ">
           <div className="flex items-center gap-2">
             <div className=" w-8 h-8 rounded-full flex items-center justify-center text-white font-bold">
@@ -242,7 +242,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isExpanded, toggleSidebar }) => {
       </div>
 
       {/* Fixed Footer - Logout Section */}
-      <div className="flex-shrink-0">
+      <div className="shrink-0">
         <SidebarFooter isExpanded={isExpanded} user={user} />
       </div>
     </aside>
