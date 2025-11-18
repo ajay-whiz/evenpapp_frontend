@@ -588,17 +588,17 @@ export const BookingIndex: React.FC = () => {
 
         {/* Event Quotation Modal - Right Side Slide */}
         {showQuotationModal && (
-          <div className="fixed inset-0 z-50">
+          <div className="fixed inset-0 z-50 backdrop-blur-md">
             <div 
               className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-xl transform transition-transform duration-300 ease-in-out flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Modal Header */}
-              <div className="flex items-center justify-between p-6 border-b border-gray-200 flex-shrink-0">
+              <div className="flex items-center justify-between p-6 border-b border-gray-200 shrink-0">
                 <h3 className="text-lg font-semibold text-gray-900">Event Quotation</h3>
                 <button
                   onClick={handleCancelQuotation}
-                  className="text-gray-400 hover:text-gray-600 transition-colors"
+                  className="text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
                 >
                   <X className="w-5 h-5" />
                 </button>
@@ -615,7 +615,7 @@ export const BookingIndex: React.FC = () => {
                       type="text"
                       value={quotationData.quotationTitle}
                       onChange={(e) => handleQuotationChange('quotationTitle', e.target.value)}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                       placeholder="e.g., Wedding Photography Premium Package"
                     />
                   </div>
@@ -627,7 +627,7 @@ export const BookingIndex: React.FC = () => {
                       value={quotationData.description}
                       onChange={(e) => handleQuotationChange('description', e.target.value)}
                       rows={4}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                       placeholder="Explain your offer and services in detail..."
                     />
                   </div>
@@ -639,7 +639,7 @@ export const BookingIndex: React.FC = () => {
                       type="number"
                       value={quotationData.price}
                       onChange={(e) => handleQuotationChange('price', Number(e.target.value))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                       placeholder="0"
                       min="0"
                     />
@@ -652,7 +652,7 @@ export const BookingIndex: React.FC = () => {
                       value={quotationData.breakdownOfCharges}
                       onChange={(e) => handleQuotationChange('breakdownOfCharges', e.target.value)}
                       rows={3}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                       placeholder="Item 1: ₹1000&#10;Item 2: ₹2000&#10;Item 3: ₹1500"
                     />
                   </div>
@@ -664,7 +664,7 @@ export const BookingIndex: React.FC = () => {
                       type="number"
                       value={quotationData.discounts}
                       onChange={(e) => handleQuotationChange('discounts', Number(e.target.value))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                       placeholder="0"
                       min="0"
                     />
@@ -677,7 +677,7 @@ export const BookingIndex: React.FC = () => {
                       type="number"
                       value={quotationData.taxes}
                       onChange={(e) => handleQuotationChange('taxes', Number(e.target.value))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                       placeholder="0"
                       min="0"
                     />
