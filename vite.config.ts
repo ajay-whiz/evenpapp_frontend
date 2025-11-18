@@ -14,6 +14,7 @@ export default defineConfig({
   preview: {
     host: '0.0.0.0',
     port: process.env.PORT ? parseInt(process.env.PORT) : 5173,
+    strictPort: false,
     allowedHosts: [
       'localhost',
       '127.0.0.1',
@@ -28,7 +29,7 @@ export default defineConfig({
     open: false,
     proxy: {
       '/api': {
-        target: 'https://evenpappbackend-production.up.railway.app',
+        target: 'https://evenpappbackend-production.up.railway.app/api/v1',
         changeOrigin: true,
         secure: true,
         rewrite: (path) => path.replace(/^\/api/, '/api')
